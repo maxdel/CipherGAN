@@ -18,9 +18,9 @@ tf.flags.DEFINE_string("metrics", "xy_mse",
 tf.flags.DEFINE_string("output_dir", "tmp/tf_run",
                        "The output directory.")
 tf.flags.DEFINE_string("data_dir", "tmp/data", "The data directory.")
-tf.flags.DEFINE_integer("train_steps", 1e4,
+tf.flags.DEFINE_integer("train_steps", 10000,
                         "Number of training steps to perform.")
-tf.flags.DEFINE_integer("eval_steps", 1e2,
+tf.flags.DEFINE_integer("eval_steps", 100,
                         "Number of evaluation steps to perform.")
 tf.flags.DEFINE_boolean("overwrite_output", False,
                         "Remove output_dir before running.")
